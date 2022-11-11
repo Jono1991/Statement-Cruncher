@@ -27,7 +27,6 @@ class StatementCruncher(QMainWindow):
         self.actionDelete_row.triggered.connect(self.erase_row)
         self.actionImport_Wizard.triggered.connect(self.import_wizard)
         self.actionMege_Rows.triggered.connect(self.merge_rows)
-        self.actionPrint.triggered.connect(self.print_file)
         self.actionExit.triggered.connect(self.exit)
 
     def exit(self):
@@ -42,10 +41,6 @@ class StatementCruncher(QMainWindow):
             QApplication.exit()
         else:
             pass
-
-    def print_file(self):
-        print("Converting Table to Text Area....")
-
 
     def new(self):
         self.table.setRowCount(0)
